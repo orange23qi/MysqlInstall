@@ -4,7 +4,7 @@
 RootPwd='154860c306a3b969f484440e6858775b'
 MysqlPort='3306'
 
-#
+#1
 ServiceId=`ifconfig eth0|grep inet|grep netmask|awk '{print $2}'|awk -F '.' '{print $3,$4}'|sed "s/ //g"`
 InnodbBufferSize=`cat /proc/meminfo|grep MemTotal|awk '{printf("%.f",$2/1024/1024*0.6-1)}'`
 
